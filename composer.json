@@ -1,0 +1,13 @@
+{
+    "require": {
+        "league/flysystem": "^1.0",
+        "dg/mysql-dump": "1.*",
+        "rakit/console": "^0.0.2",
+        "apix/log": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Emsifa\\Backuper\\": "src"
+        }
+    }
+}

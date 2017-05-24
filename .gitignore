@@ -1,0 +1,7 @@
+backups/*
+!backups/.gitkeep
+configs/*.php
+logs/*.log
+temp/*
+!temp/.gitkeep
+composer.lock
