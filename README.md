@@ -69,7 +69,7 @@ return [
             'driver'    => 'local',
             'root'      => BACKUPER_PATH.'/backups/pjb-bright'
         ],
-        [
+        'ftp' => [
             'driver'    => 'ftp',
             'host'      => 'ftp.websitekamu.com',
             'port'      => 21,
