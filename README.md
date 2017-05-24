@@ -19,11 +19,11 @@ backuper hanya dapat melakukan backup pada database MySQL/MariaDB.
 
 ## Panduan
 
-#### Instalasi
+#### 1. Instalasi
 
 Download repository ini, upload dan extract ke hosting kamu.
 
-#### Menyiapkan File Konfigurasi
+#### 2. Menyiapkan File Konfigurasi
 
 Backuper membutuhkan sebuah konfigurasi untuk menyimpan pengaturan backup kamu.
 
@@ -68,7 +68,7 @@ return [
     'backups' => [
         'local' => [
             'driver'    => 'local',
-            'root'      => BACKUPER_PATH.'/backups/myapp'
+            'root'      => BACKUPER_PATH.'/backups/mysite'
         ],
         'ftp' => [
             'driver'    => 'ftp',
@@ -87,7 +87,7 @@ return [
 
 > Jika kamu ingin backup ke dropbox, kamu terlebih dahulu harus menginstall 'srmklive/flysystem-dropbox-v2' melalui composer.
 
-#### Menjalankan Backup
+#### 3. Menjalankan Backup
 
 Buat sebuah cronjob baru, masukkan command berikut:
 
@@ -100,7 +100,7 @@ php /home/usernamehosting/folder/ke/backuper/backuper.php backup configs/mysite.
 Untuk saat ini backuper hanya mendaftarkan 3 buah driver resolver yaitu 'local', 'ftp' dan 'dropbox'.
 Jika kamu ingin menggunakan adapter filesystem lain, kamu dapat mencoba beberapa cara berikut:
 
-#### Mendaftarkan Instance Filesystem ke Dalam Konfigurasi
+#### Cara 1: Mendaftarkan Instance Filesystem ke Dalam Konfigurasi
 
 ```php
 return [
@@ -122,7 +122,7 @@ return [
 ];
 ```
 
-#### Membuat Driver Resolver Baru
+#### Cara 2: Membuat Driver Resolver Baru
 
 Buat file baru di `src/DriverResolvers`, contoh `GoogleDriveDriverResolver.php`.
 
