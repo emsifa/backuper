@@ -9,7 +9,7 @@ jadi kamu dapat menyimpan file backup ke berbagai media penyimpanan
 seperti local, hosting/server lain (via ftp/sftp), dropbox, google drive, onedrive, Amazon S3, dsb.
 
 Backuper dibuat atas dasar kebutuhan pada shared hosting, jadi untuk saat ini
-backuper hanya dapat melakukan backup pada database MySQL.
+backuper hanya dapat melakukan backup pada database MySQL/MariaDB.
 
 ## Requirement
 
