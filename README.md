@@ -67,7 +67,7 @@ return [
     'backups' => [
         'local' => [
             'driver'    => 'local',
-            'root'      => BACKUPER_PATH.'/backups/pjb-bright'
+            'root'      => BACKUPER_PATH.'/backups/myapp'
         ],
         'ftp' => [
             'driver'    => 'ftp',
